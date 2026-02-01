@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta name="description" content="Monitor de tasas" />
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" href="/icons/icon-192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+
+  <title>Monitor de Tasas</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__left">
+      <div class="brand">Monitor de Tasas</div>
+      <div class="sub" id="subline">Cargando…</div>
+    </div>
+    <button class="btn" id="refreshBtn" type="button" aria-label="Actualizar">
+      Actualizar
+    </button>
+  </header>
+
+  <main class="container">
+    <section class="grid" id="ratesGrid" aria-live="polite"></section>
+
+    <section class="meta">
+      <div class="meta__row">
+        <span class="label">Última actualización (servidor):</span>
+        <span class="value" id="serverUpdated">—</span>
+      </div>
+      <div class="meta__row">
+        <span class="label">Hora en tu dispositivo:</span>
+        <span class="value" id="clientNow">—</span>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="disclaimer">Tasa sujeta a cambios sin previo aviso.</div>
+    </footer>
+  </main>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

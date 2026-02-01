@@ -1,0 +1,10 @@
+# Netlify: evitar cache agresiva del JSON para que los clientes vean la tasa actual
+[[headers]]
+  for = "/rates.json"
+  [headers.values]
+    Cache-Control = "no-store, no-cache, must-revalidate, proxy-revalidate"
+
+[[headers]]
+  for = "/*.webmanifest"
+  [headers.values]
+    Cache-Control = "no-cache"
