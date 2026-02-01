@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-01T00:00:00Z",
+  "updated_at": "2026-02-01T19:50:00Z",
   "base_note": "Edita este archivo para cambiar las tasas. Netlify desplegará los cambios.",
   "rates": [
     {
@@ -14,14 +14,14 @@
       "title": "Brasil → Venezuela",
       "pair": "BRL → VES",
       "value": 88,
-      "unit": "Bs / 1 R$"
+      "unit": "R$ / 1 Bs"
     },
     {
       "id": "ve_br",
       "title": "Venezuela → Brasil",
       "pair": "VES → BRL",
       "value": 105,
-      "unit": "R$ / 100 Bs"
+      "unit": "BS / 100 R$"
     }
   ]
 }
